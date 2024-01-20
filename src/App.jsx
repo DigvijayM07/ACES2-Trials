@@ -3,6 +3,7 @@ import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import  Team from "./components/Team";
 import  Cans from "./components/Cans";
+import  Pic from "./components/Pic";
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
 
   return (
     <>
-  <Team/>
+  <Pic/>
     </>
   );
 }
