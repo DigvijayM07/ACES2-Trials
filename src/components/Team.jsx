@@ -58,6 +58,7 @@ const Team = () => {
         hoveredIndex={hoveredIndex}
         handleMouseOver={handleMouseOver}
         handleMouseOut={handleMouseOut}
+        
       />
     </div>
   );

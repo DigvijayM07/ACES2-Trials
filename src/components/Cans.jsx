@@ -41,6 +41,8 @@ const Cans = ({ images, hoveredIndex, handleMouseOver, handleMouseOut }) => {
           className="relative"
           onMouseOver={() => handleMouseOver(index)}
           onMouseOut={handleMouseOut}
+          data-aos="fade-up" // Apply zoom-out animation to the image
+          data-aos-delay="4000"
         >
           <div
             className="absolute top-0 left-0 w-full h-full opacity-0.9 transition-opacity duration-300 custom-bg z-0"
@@ -50,6 +52,7 @@ const Cans = ({ images, hoveredIndex, handleMouseOver, handleMouseOut }) => {
               height: hoveredIndex === index ? "1000px" : "500px",
               transition: "opacity 0.3s ease-in-out, height 0.3s ease-in-out",
             }}
+            
           >
             {hoveredIndex === index && (
               <img
@@ -95,6 +98,7 @@ const Cans = ({ images, hoveredIndex, handleMouseOver, handleMouseOut }) => {
               zIndex: 3, // Ensure the image is above both background and label
             }}
             className={`w-[380px] h-[320px] object-cover flex-shrink-0 ${hoveredIndex ? {} : "opacity-70"}`}
+            
           />
         </div>
       ))}
