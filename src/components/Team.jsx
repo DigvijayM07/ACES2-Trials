@@ -26,7 +26,7 @@ const Team = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-between h-screen p-8 bg-gradient-to-r from-black to-gray-700 overflow-hidden"
+      className="flex flex-col items-center justify-between h-screen p-8 bg-gradient-to-r from-black to-gray-700 overflow-hidden mix-blend-difference"
       style={{
         backgroundImage: `url(${bannerBg})`,
         backgroundSize: "cover",
@@ -36,21 +36,21 @@ const Team = () => {
     >
       <div className="flex-1">
         <h1
-          className="rog font-extrabold leading-tight uppercase text-white pt-3 pb-1 text-[92px]"
+          className="rog font-extrabold leading-tight uppercase text-white pt-3 pb-1 text-[92px] mix-blend-overlay"
           data-aos="fade-right"
           data-aos-delay="200"
           data-aos-duration="800" // Adjust the duration as needed
           data-aos-easing="ease-in-out" // Use a different easing function if desired
           style={{
-            color: hoveredIndex || hoveredIndex === 0 ? "rgba(255, 255, 255, 0.1)" : "rgba(255, 255, 255, 1)",
+           color: hoveredIndex || hoveredIndex === 0 ? "rgba(255, 255, 255, 0.1)" : "rgba(255, 255, 255, 1)",
             transition: hoveredIndex ? "color 0.3s ease-in-out": {},
           }}
         >
-          Association
+           Association
           <br />
-          Computer Engineering
+           Computer Engineering
           <br />
-          Students
+           Students
         </h1>
       </div>
       <Cans

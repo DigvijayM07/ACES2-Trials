@@ -43,7 +43,7 @@ const Cans = ({ images, hoveredIndex, handleMouseOver, handleMouseOut }) => {
           onMouseOut={handleMouseOut}
         >
           <div
-            className="absolute top-0 left-0 w-full h-full opacity-0.9 transition-opacity duration-300 custom-bg"
+            className="absolute top-0 left-0 w-full h-full opacity-0.9 transition-opacity duration-300 custom-bg z-0"
             style={{
               opacity: hoveredIndex === index ? 0.8 : 0,
               top: hoveredIndex === index ? "-600px" : 0,
@@ -59,7 +59,7 @@ const Cans = ({ images, hoveredIndex, handleMouseOver, handleMouseOut }) => {
               />
             )}
             <div
-              className={`rog text-white absolute left-1/2 transform -translate-x-1/2 text-[50px] font-extrabold top-1/4`}
+              className={`rog text-white absolute left-1/2 transform -translate-x-1/2 text-[35px] font-extrabold top-[15%]`}
               style={{
                 color: "#fff",
                 zIndex: 2,
@@ -73,7 +73,7 @@ const Cans = ({ images, hoveredIndex, handleMouseOver, handleMouseOut }) => {
                 className={"text-white absolute left-1/2 transform -translate-x-1/2 text-[50px] font-extrabold top-1/2"}
                 style={{
                   color: "#fff",
-                  opacity: hoveredIndex===index || (hoveredIndex === 0 && hoveredIndex===index)  ?"0":"0.4",
+                  opacity: hoveredIndex===index || (hoveredIndex === 0 && hoveredIndex===index)  ?"0":"0.5",
                   zIndex: 2, // Ensure the label is above the background
                   transform: "rotate(-90deg)", // Rotate the text by default
                   transformOrigin: "bottom left",
@@ -94,7 +94,7 @@ const Cans = ({ images, hoveredIndex, handleMouseOver, handleMouseOut }) => {
               ...(hoveredIndex === index ? { ...translateYStyle, filter: "brightness(1.5)" } : {}),
               zIndex: 3, // Ensure the image is above both background and label
             }}
-            className="w-[380px] h-[320px] object-cover flex-shrink-0"
+            className={`w-[380px] h-[320px] object-cover flex-shrink-0 ${hoveredIndex ? {} : "opacity-70"}`}
           />
         </div>
       ))}
