@@ -1,5 +1,8 @@
+// Card.jsx
 import React from 'react';
-import icon from "../assets/pwa/icon.png";
+import instagramIcon from "../assets/pwa/instagram.png";
+import githubIcon from "../assets/pwa/githubicon.png";
+import blueTwitterIcon from "../assets/pwa/bluetwitter.png";
 
 const Card = ({ people }) => {
   return (
@@ -20,12 +23,26 @@ const Card = ({ people }) => {
                 <h2 className="orbit text-xl font-bold text-white">{person.name}</h2>
                 <p className="text-base font-medium text-gray-400">{person.role}</p>
               </div>
-              <div className="flex items-center justify-center space-x-3 md:justify-start">
-                {/* Twitter Icon or any other social media icon */}
+              <div className="flex items-center justify-center space-x-3 md:justify-start pl-5">
+                {/* Instagram Icon */}
                 <img
-                  className="w-6 h-6"
-                  src={icon}
-                  alt="Icon"
+                  className="w-6 h-6 transform-gpu hover:scale-125 transition-transform ease-in-out duration-[350ms] filter hover:brightness-150"
+                  src={instagramIcon}
+                  alt="Instagram Icon"
+                />
+                
+                {/* GitHub Icon */}
+                <img
+                  className="w-6 h-6 transform-gpu hover:scale-125 transition-transform ease-in-out duration-[350ms] filter hover:brightness-155"
+                  src={githubIcon}
+                  alt="GitHub Icon"
+                />
+
+                {/* Blue Twitter Icon */}
+                <img
+                  className="w-6 h-6 transform-gpu hover:scale-125 transition-transform ease-in-out duration-[350ms] filter hover:brightness-125"
+                  src={blueTwitterIcon}
+                  alt="Blue Twitter Icon"
                 />
               </div>
             </div>

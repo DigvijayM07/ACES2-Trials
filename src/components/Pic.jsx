@@ -28,7 +28,7 @@ const Pic = () => {
           <img
             src={acesImage}
             alt="ACES Logo"
-            className={`mb-4 w-[80%] h-1/2 max-h-[80%] rounded-lg relative z-10 transform-gpu hover:scale-110 transition-transform ease-in-out duration-[350ms] hover:grayscale-0 grayscale transition-filter ease-in duration-600`}
+            className={`mb-4 w-[80%] h-1/2 max-h-[80%] rounded-lg relative z-10 transform-gpu hover:scale-95 transition-transform ease-in-out duration-[350ms] hover:grayscale-0 grayscale transition-filter ease-in duration-600`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           />
