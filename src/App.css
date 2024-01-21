@@ -18,3 +18,13 @@
 .pic-bg{
    background-color: rgba(21, 20, 20, 1);
 }
+
+
+@font-face {
+  font-family: orbit;
+  src: url(./assets/font/orbit.ttf);
+}
+
+.orbit{
+  font-family: orbit;
+}

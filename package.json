@@ -3,6 +3,11 @@
   "private": true,
   "version": "0.1.0",
   "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.5",
+    "@mui/material": "^5.15.5",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.12",
+    "@mui/system": "^5.15.5",
     "@react-three/drei": "^9.56.11",
     "@react-three/fiber": "^8.10.1",
     "@testing-library/jest-dom": "^5.16.4",
@@ -28,6 +33,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-spring": "^9.7.3",
+    "styled-components": "^6.1.8",
     "three": "^0.149.0",
     "vibrant": "^0.0.1",
     "web-vitals": "^2.1.4"

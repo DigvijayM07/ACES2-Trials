@@ -4,6 +4,8 @@ import React, { useEffect } from "react";
 import  Team from "./components/Team";
 import  Cans from "./components/Cans";
 import  Pic from "./components/Pic";
+import  Member from "./components/Member";
+import  Card from "./components/Card";
 
 
 function App() {
@@ -15,8 +17,9 @@ function App() {
 
   return (
     <>
-  <Pic/>
-  <Team/>
+  {/* <Pic/>
+  <Team/> */}
+  <Member/>
     </>
   );
 }
