@@ -3,13 +3,16 @@ import React from 'react';
 import instagramIcon from "../assets/pwa/instagram.png";
 import githubIcon from "../assets/pwa/githubicon.png";
 import blueTwitterIcon from "../assets/pwa/bluetwitter.png";
+import Tilt from 'react-parallax-tilt';
 
 const Card = ({ people }) => {
   return (
     <div>
       {people.map((person, index) => (
         <div key={index} className="flex items-center justify-center m-6">
+        <Tilt glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all">
           <div className="flex flex-col items-center w-full max-w-xs p-4 custom-bg rounded-3xl md:flex-row">
+          
             <div className="mt-28 md:-my-16 md:-ml-32 transform-gpu hover:scale-110 transition-transform ease-in-out duration-[350ms]"
              style={{ clipPath: "url(#roundedPolygon)" }}>
               <img
@@ -18,6 +21,7 @@ const Card = ({ people }) => {
                 alt={person.name}
               />
             </div>
+
             <div className="flex flex-col space-y-4">
               <div className="flex flex-col items-center md:items-start pl-4">
                 <h2 className="orbit text-xl font-bold text-white">{person.name}</h2>
@@ -47,6 +51,7 @@ const Card = ({ people }) => {
               </div>
             </div>
           </div>
+          </Tilt>
 
           {/* SVG Definitions */}
           <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">

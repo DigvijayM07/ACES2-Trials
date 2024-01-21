@@ -17,9 +17,9 @@ function App() {
 
   return (
     <>
-  <Pic/>
-  <Team/>
-  {/* <Member/> */}
+  {/* <Pic/>
+  <Team/> */}
+  <Member/>
     </>
   );
 }
