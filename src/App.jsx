@@ -4,8 +4,12 @@ import React, { useEffect } from "react";
 import  Team from "./components/Team";
 import  Cans from "./components/Cans";
 import  Pic from "./components/Pic";
-import  Member from "./components/Member";
+import  Technical from "./components/Technical";
+import  Management from "./components/Management";
+import  Sports from "./components/Sports";
+import  Cultural from "./components/Cultural";
 import  Card from "./components/Card";
+import  Footer from "./components/Footer";
 
 
 function App() {
@@ -17,9 +21,13 @@ function App() {
 
   return (
     <>
-  {/* <Pic/>
+   {/* <Pic/>
   <Team/> */}
-  <Member/>
+  <Technical/> 
+  {/* <Management/>
+  <Sports/>
+  <Cultural/> */}
+  {/* <Footer/> */}
     </>
   );
 }

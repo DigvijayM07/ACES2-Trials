@@ -5,7 +5,7 @@ import Card from './Card';
 import { peopleData } from './imagesData';
 
 
-const Member = () => {
+const Technical = () => {
   return (
     <div className="pic-bg h-screen flex flex-col items-center justify-start text-white overflow-auto">
       <h1 className="text-2xl font-bold p-6 tracking-[1rem]"
@@ -16,7 +16,7 @@ const Member = () => {
         <div className="mx-4">
           <h1 className="rog text-6xl font-bold"
           data-aos="zoom-in-down"
-          data-aos-delay="400">TECHNICAL TEAM</h1>
+          data-aos-delay="400">Technical TEAM</h1>
         </div>
         <div className="flex-grow h-[3px] bg-white"></div>
       </div>
@@ -31,4 +31,4 @@ const Member = () => {
   );
 };
 
-export default Member;
+export default Technical;

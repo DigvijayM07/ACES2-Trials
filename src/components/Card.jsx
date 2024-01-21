@@ -10,7 +10,7 @@ const Card = ({ people }) => {
     <div>
       {people.map((person, index) => (
         <div key={index} className="flex items-center justify-center m-6">
-        <Tilt glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all">
+        <Tilt glareEnable={false} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all">
           <div className="flex flex-col items-center w-full max-w-xs p-4 custom-bg rounded-3xl md:flex-row">
           
             <div className="mt-28 md:-my-16 md:-ml-32 transform-gpu hover:scale-110 transition-transform ease-in-out duration-[350ms]"
