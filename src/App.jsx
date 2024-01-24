@@ -21,12 +21,12 @@ function App() {
 
   return (
     <>
-   {/* <Pic/>
+    {/* <Pic/>
   <Team/> */}
-  <Technical/> 
-  {/* <Management/>
-  <Sports/>
-  <Cultural/> */}
+  <Technical/>  
+  {/* <Management/> */}
+  {/* <Sports/> */}
+  {/* <Cultural/> */}
   {/* <Footer/> */}
     </>
   );
