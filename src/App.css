@@ -19,6 +19,9 @@
 .pic-bg{
    background-color: rgba(21, 20, 20, 1);
 }
+.projectcard-bg{
+   background-color: rgba(34, 35, 35, 5);
+}
 
 
 @font-face {

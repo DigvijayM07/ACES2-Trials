@@ -10,10 +10,14 @@ import  Sports from "./components/Sports";
 import  Cultural from "./components/Cultural";
 import  Card from "./components/Card";
 import  Footer from "./components/Footer";
+import ProjectCard from "./components/ProjectCard";
+import NewsLetter from "./components/NewsLetter";
+import New from "./components/New";
+import Gallery from "./components/ImageEffect";
 
 
 function App() {
-  useEffect(() => {
+  useEffect(() => { 
     AOS.init({
       duration: 1000, // Animation duration
     });
@@ -21,14 +25,18 @@ function App() {
 
   return (
     <>
-    {/* <Pic/>
-  <Team/> */}
-  <Technical/>  
-  {/* <Management/> */}
-  {/* <Sports/> */}
-  {/* <Cultural/> */}
-  {/* <Footer/> */}
-    </>
+    {/* <New /> */}
+{/* <Pic/>
+  <Team/>    */}
+   {/* <Technical/>   */}
+  {/*<Management/>
+ <Sports/>
+  <Cultural/>*/}
+  {/* <NewsLetter/>  */}
+  <Gallery />
+  {/* <Footer/>   */}
+  {/* <ProjectCard /> */}
+    </> 
   );
 }
 
