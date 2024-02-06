@@ -6,14 +6,6 @@
     position: relative; /* Add relative positioning to the container */
   }
   
-  
- 
-  
-  
-  
-  
-  
-  
   .outer {
     display: flex;
     flex-direction: column;
@@ -43,3 +35,15 @@
     transform: translateY(20px); /* Adjust the distance you want the heading to drop */
   }
   
+
+  /* effect.css */
+
+/* Styles for the black and white effect by default */
+.grayscale {
+  filter: grayscale(100%);
+  transition: filter 0s ease-in-out;  }
+
+/* Styles for the original color effect on hover */
+.grayscale:hover {
+  filter: grayscale(0%);
+}

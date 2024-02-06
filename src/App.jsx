@@ -14,6 +14,11 @@ import ProjectCard from "./components/ProjectCard";
 import NewsLetter from "./components/NewsLetter";
 import New from "./components/New";
 import Gallery from "./components/ImageEffect";
+import Test from "./components/Test";
+import AboutUs from "./components/AboutUs";
+import ImageEffect from "./components/ImageEffect";
+import ModelBack from "./components/ModelBack";
+import Back from "./components/Back";
 
 
 function App() {
@@ -25,17 +30,23 @@ function App() {
 
   return (
     <>
+    <Back />
     {/* <New /> */}
-{/* <Pic/>
-  <Team/>    */}
+<Pic/> 
+  <Team/>  
    {/* <Technical/>   */}
   {/*<Management/>
  <Sports/>
   <Cultural/>*/}
   {/* <NewsLetter/>  */}
-  <Gallery />
-  {/* <Footer/>   */}
+  {/* <Gallery />*/}
+  {/* <Footer/>    */}
   {/* <ProjectCard /> */}
+  {/* <Test /> */}
+  {/* <AboutUs /> */}
+  {/* <ImageEffect /> */}
+  {/* <ModelBack /> */}
+
     </> 
   );
 }

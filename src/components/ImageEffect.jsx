@@ -1,77 +1,61 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./effect.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import K from "../assets/events2223/1k.png";
-import Cloud from "../assets/events2223/cloud.png";
-import Compose from "../assets/events2223/compose.png";
-import DSA from "../assets/events2223/dsa.png";
-import GCCP from "../assets/events2223/gccp.png";
-import Info from "../assets/events2223/infosession.png";
 
 const ImageEffect = () => {
-  const handleMouseEnter = (event) => {
-    event.target.classList.remove("zoom-in", "original-color");
-  };
-
-  const handleMouseLeave = (event) => {
-    event.target.classList.add("zoom-in", "original-color");
-  };
-
-  useEffect(() => {
-    AOS.init({
-      duration: 400,
-    });
-  }, []);
-
-  const groupedImages = [
-    [
-      { src: K, alt: "Your Image Alt Text", aosProps: { animation: "fade-left", delay: "200", duration: "800", easing: "ease-in-out" } },
-      { src: DSA, alt: "Your Image Alt Text", aosProps: { animation: "fade-right", delay: "200", duration: "800", easing: "ease-in-out" } },
-    ],
-    [
-      { src: Compose, alt: "Your Image Alt Text", aosProps: { animation: "fade-left", delay: "200", duration: "800", easing: "ease-in-out" } },
-      { src: GCCP, alt: "Your Image Alt Text", aosProps: { animation: "fade-left", delay: "200", duration: "800", easing: "ease-in-out" } },
-    ],
-    [
-      { src: Info, alt: "Your Image Alt Text", aosProps: { animation: "fade-right", delay: "200", duration: "800", easing: "ease-in-out" } },
-      { src: Cloud, alt: "Your Image Alt Text", aosProps: { animation: "fade-left", delay: "200", duration: "800", easing: "ease-in-out" } },
-    ],
-    // Add more groups as needed
-  ];
-
-  const renderImageContainer = (group, groupIndex) => (
-    <div key={groupIndex} className="m">
-      {group.map((image, index) => (
-        <div key={index} className="outer pic-bg">
-          <div
-            data-aos={image.aosProps.animation}
-            data-aos-delay={image.aosProps.delay}
-            data-aos-duration={image.aosProps.duration}
-            data-aos-easing={image.aosProps.easing}
-            className="image-container m-[5rem] transform-gpu hover:scale-90 transition-transform ease-in-out duration-[350ms]"
-            style={{ position: "relative", overflow: "hidden" }}
-          >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="m-[100px] overflow-hidden relative rounded-xl grayscale hover:grayscale-0 transform-gpu hover:scale-105 transition-transform ease-in-out duration-[350ms]"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            />
-            <h3
-              data-aos="flip-up"
-              className="translate-x-9 absolute text-white font-extrabold text-2xl"
-            >
-              ---About---
-            </h3>
+  return (
+    <div className="bg-black">
+      <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+        <div className="-m-1 flex flex-wrap md:-m-2">
+          <div className="flex w-1/2 flex-wrap">
+            <div className="w-1/2 p-1 md:p-2 grayscale">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center transform-gpu hover:scale-110 transition-transform ease-in-out duration-[350ms]"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
+              />
+            </div>
+            <div className="w-1/2 p-1 md:p-2 grayscale">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center transform-gpu hover:scale-110 transition-transform ease-in-out duration-[350ms]"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"
+              />
+            </div>
+            <div className="w-full p-1 md:p-2 grayscale">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center transform-gpu hover:scale-110 transition-transform ease-in-out duration-[350ms]"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+              />
+            </div>
+          </div>
+          <div className="flex w-1/2 flex-wrap">
+            <div className="w-full p-1 md:p-2 grayscale">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center transform-gpu hover:scale-110 transition-transform ease-in-out duration-[350ms]"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
+              />
+            </div>
+            <div className="w-1/2 p-1 md:p-2 grayscale">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center transform-gpu hover:scale-110 transition-transform ease-in-out duration-[350ms]"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
+              />
+            </div>
+            <div className="w-1/2 p-1 md:p-2 grayscale">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center transform-gpu hover:scale-110 transition-transform ease-in-out duration-[350ms]"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp"
+              />
+            </div>
           </div>
         </div>
-      ))}
+      </div>
     </div>
   );
-
-  return <>{groupedImages.map((group, index) => renderImageContainer(group, index))}</>;
 };
 
 export default ImageEffect;
